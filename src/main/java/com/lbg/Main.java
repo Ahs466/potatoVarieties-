@@ -14,5 +14,7 @@ public class Main {
                 "Pomme puree",
                 212.621,
                 "Mashed potatoes have a creamy, velvety texture that’s smooth and fluffy, melting in your mouth like a warm cloud of comfort");
+
+        System.out.println(frenchFry);
     }
 }

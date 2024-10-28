@@ -5,6 +5,7 @@ public class PotatoVariety {
     private double averageMass;
     private String texture;
 
+
     public PotatoVariety(String name, double averageMass, String texture){
         this.name = name;
         this.averageMass = averageMass;
@@ -14,6 +15,13 @@ public class PotatoVariety {
     // Chained Constructor
     public PotatoVariety(String name){
         this(name, 5, null);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Potato name: " + getName() + "\n, Potato Mass: " + averageMass() +
+                "\n, Potato Description: " + getTexture();
     }
 
     public String getName(){
