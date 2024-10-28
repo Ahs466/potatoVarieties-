@@ -1,6 +1,6 @@
 package com.lbg.classes;
 
-public class PotatoVariety {
+public class PotatoVariety extends Food {
     private String name;
     private double averageMass;
     private String texture;
@@ -25,13 +25,14 @@ public class PotatoVariety {
     }
 
 
-    public static String stringBuilder(String name, String mass, String texture){
+    public String stringBuilder(String name, String mass, String texture){
         return String.format("Potato name: %s\nPotato Mass: %s\nPotato Description: %s", name, mass, texture);
     }
 
     public String getName(){
         return this.name;
     }
+
     public double averageMass(){
         return this.averageMass;
     }
