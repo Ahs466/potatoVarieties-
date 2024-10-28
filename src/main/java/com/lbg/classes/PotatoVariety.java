@@ -20,8 +20,13 @@ public class PotatoVariety {
 
     @Override
     public String toString() {
-        return "Potato name: " + getName() + "\n, Potato Mass: " + averageMass() +
-                "\n, Potato Description: " + getTexture();
+        String formattedString = stringBuilder(getName(), Double.toString(averageMass()), getTexture());
+        return formattedString;
+    }
+
+
+    public String stringBuilder(String name, String mass, String texture){
+        return String.format("Potato name: %s\nPotato Mass: %s\nPotato Description: %s", name, mass, texture);
     }
 
     public String getName(){
