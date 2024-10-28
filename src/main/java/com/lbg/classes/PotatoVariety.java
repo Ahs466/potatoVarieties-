@@ -11,6 +11,11 @@ public class PotatoVariety {
         this.texture = texture;
     }
 
+    // Chained Constructor
+    public PotatoVariety(String name){
+        this(name, 5, null);
+    }
+
     public String getName(){
         return this.name;
     }
