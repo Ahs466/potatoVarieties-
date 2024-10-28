@@ -25,7 +25,7 @@ public class PotatoVariety {
     }
 
 
-    public String stringBuilder(String name, String mass, String texture){
+    public static String stringBuilder(String name, String mass, String texture){
         return String.format("Potato name: %s\nPotato Mass: %s\nPotato Description: %s", name, mass, texture);
     }
 
